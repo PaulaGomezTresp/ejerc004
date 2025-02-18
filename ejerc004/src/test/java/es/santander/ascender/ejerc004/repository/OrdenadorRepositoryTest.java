@@ -21,7 +21,7 @@ public class OrdenadorRepositoryTest {
                 Ordenador ordenador = new Ordenador();
                 ordenador.setColor("azul");
                 ordenador.setPeso(2.5);
-                ordenador.setLetras(35);
+                ordenador.setTeclas(55);
                 ordenador.setIntel(false);
 
                 repository.save(ordenador);
@@ -36,7 +36,7 @@ public class OrdenadorRepositoryTest {
             Ordenador ordenador = new Ordenador();
             ordenador.setColor("azul");
             ordenador.setPeso(2.5);
-            ordenador.setLetras(35);
+            ordenador.setTeclas(55);
             ordenador.setIntel(false);
 
             repository.save(ordenador);
@@ -52,7 +52,7 @@ public class OrdenadorRepositoryTest {
             Ordenador ordenador = new Ordenador();
             ordenador.setColor("azul");
             ordenador.setPeso(2.5);
-            ordenador.setLetras(35);
+            ordenador.setTeclas(55);
             ordenador.setIntel(false);
 
             repository.save(ordenador);

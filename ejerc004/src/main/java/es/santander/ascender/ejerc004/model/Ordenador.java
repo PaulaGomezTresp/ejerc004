@@ -19,8 +19,8 @@ public class Ordenador {
     @Column (name = "peso", nullable = false)
     private double peso;
 
-    @Column (name = "letras", nullable = false)
-    private int Letras;
+    @Column (name = "teclas", nullable = false)
+    private int teclas;
 
     @Column (name = "intel", nullable = false)
     private boolean intel;
@@ -41,14 +41,23 @@ public class Ordenador {
         return peso;
     }
     public void setPeso(double peso) {
+        if (peso <= 0) {
+            throw new IllegalArgumentException("El peso debe ser mayor que 0");
+        }
         this.peso = peso;
+    }    
+
+    public int getTeclas() {
+        return teclas;
     }
-    public int getLetras() {
-        return Letras;
-    }
-    public void setLetras(int letras) {
-        Letras = letras;
-    }
+    public void setTeclas(int teclas) {
+        
+        if (teclas< 50 || teclas> 120) {
+            throw new IllegalArgumentException("El número de teclas debe estar entre 50 y 120");
+        }
+    this.teclas = teclas;
+    }    
+
     public boolean isIntel() {
         return intel;
     }
